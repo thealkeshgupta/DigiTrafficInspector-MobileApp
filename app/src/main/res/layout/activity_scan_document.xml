@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.example.digitrafficinspectorv0.scanDocument"
+    android:background="@drawable/waves2">
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Align Your\nCamera Properly."
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="20sp" />
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_weight="2" />
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:background="@color/colorPrimary"
+        android:text="No Text Available"
+        android:textColor="@color/textColor"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/buttondesign"
+        android:text="Submit" />
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Go To Home"
+        android:layout_marginHorizontal="120dp"
+        android:background="@drawable/buttonavailabledesign"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

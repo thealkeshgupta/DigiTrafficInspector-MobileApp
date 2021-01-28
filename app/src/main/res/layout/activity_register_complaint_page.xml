@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:background="@drawable/waves2">
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="20dp"
+        android:text="Register Complaint"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/vehicleNumberInput"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:hint="Vehicle Number"
+        android:textSize="16dp"
+        android:textColorHint="#DADADA"
+        android:textColor="#FFFFFF"
+        android:inputType="textEmailAddress" />
+
+
+    <Button
+        android:id="@+id/checkNumber"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/txtVw"
+        android:background="@drawable/buttondesign"
+        android:text=" Check Number"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/frontPic"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/buttondesign"
+        android:text=" Take Vehicle Front Picture"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/leftPic"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/buttondesign"
+        android:text="Take Vehicle Left Picture"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/backPic"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/buttondesign"
+        android:text="Take Vehicle Back Picture"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/rightPic"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/buttondesign"
+        android:text="Take Vehicle Right Picture"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/drivingLicense"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/buttondesign"
+        android:text="Scan Driving License"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/insurancePaper"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/buttondesign"
+        android:text="Scan Insurance Paper"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/rcPaper"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/buttondesign"
+        android:text="Scan Road Challan"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txtVw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="60dp"
+        android:text="Select Vehicle Type:"
+        android:textColor="@color/textColor"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVw"
+        android:popupBackground="@color/colorPrimary"
+        android:layout_toRightOf="@+id/txtVw" />
+
+    <ImageView
+        android:id="@+id/simpleImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="630dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="700dp"
+        android:text="Number plate not valid" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="760dp"
+        android:text="Driving on wrong side of road" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="820dp"
+        android:text="Using mobile while driving" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="880dp"
+        android:text="Illegal lane changes" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="940dp"
+        android:text="Crossed red light" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="1000dp"
+        android:text="Driving without helmet\n(2 wheeler)" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1060dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttondesign"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonavailabledesign"
+        android:text="Go To Home"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+
+
+</RelativeLayout>
+</ScrollView>
